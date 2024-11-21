@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <style>
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(../../img/Bg.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  top: 120px;
+  margin: auto;
+  padding: 20px;
+}
+
+.signup-img {
+  position: relative;
+  top: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  max-height: 320px;
+  width: auto;
+}
+
+.signup-text {
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.data {
+  width: 90%;
+  max-width: 320px;
+  height: auto;
+  margin: auto;
+  position: relative;
+}
+
+.username {
+  position: relative;
+  top: 38px;
+  left: 5px;
+}
+
+.service {
+  text-decoration: underline;
+}
+
+.button {
+  position: relative;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.name {
+  width: 100%;
+  max-width: 320px;
+  height: 40px;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  position: relative;
+  top: 5px;
+  background-color: transparent;
+  outline: none;
+  padding-left: 45px;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  position: relative;
+  top: 2px;
+}
+
+.already-user {
+  position: relative;
+  top: -45px;
+  text-decoration: underline;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    top: 80px;
+  }
+
+  .signup-img {
+    max-height: 200px;
+  }
+
+  .signup-text {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .data {
+    width: 100%;
+  }
+
+  .already-user {
+    top: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+    top: 60px;
+  }
+
+  .signup-img {
+    max-height: 150px;
+  }
+
+  .signup-text {
+    font-size: 1rem;
+  }
+
+  .already-user {
+    top: 30px;
+    font-size: 0.9rem;
+  }
+}
+    </style>
+  </head>
+
+  <body>
+  <form method="post">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6 mt-5">
+        <h2 class="signup-text">Sign in</h2>
+        <div class="data">
+
+         
+
+          <div class="name1">
+            <i class="fa-solid fa-envelope username"></i>
+            <input type="email" name="Txt_email" placeholder="Your Email" class="name" required>
+          </div>
+
+          <div class="name1">
+            <i class="fa-solid fa-lock username"></i>
+            <input type="password" name="txt_password" placeholder="Password" class="name" required>
+          </div>
+
+
+          <div class="form-check mt-4">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+           <span class="remember">Remember Me</span>
+           
+          </div>
+
+          <button type="submit" name="btn" class="btn btn-primary button">Sign in</button>
+
+
+
+        </div>
+        </div>
+        <div class="col-6 mt-5">
+          <img src="../../Logo/dicolor.png" class="signup-img" >
+
+          <a href="register.html"> <p class="already-user"> Creat an account..? Sign up </p></a>
+        </div>
+      </div>
+    </div>
+  </form>
+ </body>
+</html>
