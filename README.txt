@@ -21,8 +21,8 @@ This project aims to create a clean, responsive, and user-friendly website using
 
 To run this project on your local machine, follow these steps:
 
-- Extract the **web.7z** file to any location.
+- In the folder, open the **Index.html** with any browser.
 
-- In the folder named **web**, open the **Index.html** with any browser....
+- And the project is working.
 
-- The project is still in development....
+Note:- The project is still in development, so some of the pages are missing that will be added soon....
