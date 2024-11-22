@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>houseofkaroti</title>
+    <link rel="stylesheet" href="News.css">
+</head>
+<body>
+
+<div class="banner">
+  <div class="navbar">
+    <a href="../../index.html" ><img src="../../Logo/Black-White.png" class="logo"></a>
+    <ul>
+        <li><a href="../Home/Home.html">Home</a></li>
+        <li><a href="News.html">NEWS</a></li>
+        <li><a href="../Location/Location.html">Location</a></li>
+        <li><a href="../About/About.html">About Us</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <section id="featured" class="featured">
+      <h1>Featured News</h1>
+      <div class="featured-article">
+        <div class="content">
+          <img src="../../img/NEWS/Mountabu-summer-fest.jpg" alt="Featured News">
+          <h2>Mount Abu Summer Festival</h2>
+          <p>The Mount Abu Summer Festival showcases Rajasthan's vibrant culture with folk dances, music, and boat races on Nakki Lake. Tourists flock to enjoy the cool hill station and its rich traditions during the festivities.</p>
+        </div>
+        <div class="content">
+          <img src="../../img/NEWS/Sirohi-mela.jpg" alt="Featured News">
+          <h2>Sirohi Saneshwar Fair</h2>
+          <p>The Sarneshwar Fair in Sirohi celebrates the Rabari community's vibrant traditions with a grand procession led by the Raja of Sirohi. It honors Lord Jagadish, reflecting the district's rich historical and cultural heritage.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="latest" class="latest">
+      <h1>Latest News</h1>
+      <input type="text" id="search-bar" placeholder="Search news by title...">
+      <div id="news-list" class="news-list">
+        <!-- Articles will be rendered here by JavaScript -->
+      </div>
+    </section>
+    <section id="submit-news" class="submit-news">
+      <h1>Submit Your News</h1>
+      <form id="news-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="news">Your News:</label>
+        <textarea id="news" name="news" rows="5" placeholder="Enter your news details" required></textarea>
+        
+        <button type="submit">Send News</button>
+      </form>
+      <p id="form-message" class="form-message"></p>
+    </section>
+  </main>
+</div>
+  <footer id="contact">
+    <p>&copy; 2024 Local News. All rights reserved.</p>
+  </footer>
+
+  <script src="News.js"></script>
+</body>
+</html>
