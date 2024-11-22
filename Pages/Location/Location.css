@@ -1,0 +1,256 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.75)), url(../../img/Bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: auto;
+z-index: 1;
+}
+
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+position: relative;
+z-index: 2;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+  mix-blend-mode: screen;
+z-index: 3;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px 20px;
+  position: relative;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Card Styles */
+.slide-card {
+  background: linear-gradient(90deg, rgba(32, 53, 71, 1) 0%, rgba(32, 53, 71, 1) 39%, rgba(32, 53, 71, 1) 99%);
+  box-shadow: 6px 7px 8px -7px #203547;
+  margin: 0 40px;
+  padding: 45px 63px;
+  border-radius: 20px;
+  cursor: grab;
+}
+
+.slide-card .slide-card-img-top {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 15px auto 0;
+  box-shadow: 0 8px 20px -4px #203547;
+  width: 100px;
+  height: 100px;
+}
+
+.slide-card h5 {
+  color: #a4bfd6;
+  font-size: 21px;
+  margin: 15px 0;
+}
+
+.slide-card h5 span {
+  font-size: 18px;
+  color: #dcab6c;
+}
+
+.slide-card p {
+  font-size: 18px;
+  color: #a4bfd6;
+  padding-bottom: 15px;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Transform active card for scale effect */
+.swiper-slide.swiper-slide-active {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-next, .swiper-button-prev {
+  color: #fff;
+}
+  
+  #categories{
+    text-align: center;
+    color: #a4bfd6;
+  }
+
+  /* Categories */
+  .category-buttons button {
+    background-color: #a4bfd6;
+    color: #203547;
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .category-buttons button:hover {
+    background-color: #203547;
+    color: #a4bfd6;
+  }
+
+  /* Search Container */
+
+#search{
+    text-align: center;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .search-container input {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #203547;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .search-container input:focus {
+    border-color: #a4bfd6;
+    box-shadow: 0 0 5px #a4bfd6;
+  }
+  
+  /* Search Button */
+  .search-container button {
+    background-color: #203547;
+    color: #a4bfd6;
+    border: 2px solid #203547;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .search-container button:hover {
+    background-color: #a4bfd6;
+    color: #203547;
+    border-color: #a4bfd6;
+  }
+  
+  .search-container button:focus {
+    box-shadow: 0 0 5px #a4bfd6;
+  }
+  
+  
+  /* Places Grid */
+  #places{
+    text-align: center;
+  }
+
+  /* Places Grid - Centering and Spacing */
+.places-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px; /* Smaller spacing between cards */
+    justify-content: center; /* Centers the grid */
+    padding: 20px;
+  }
+  
+  .place-card {
+    background-color: #203547;
+    color: #a4bfd6;
+    text-align: center;
+    padding: 10px; /* Reduced padding inside the card */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .place-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .place-card:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+  }
+  
+  /* Adjust card text spacing */
+  .place-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #a4bfd6;
+  }
+  
+  .place-card p {
+    font-size: 14px;
+    color: #a4bfd6;
+    margin: 5px 0;
+  }
+  
+  #hidden-gems{
+    text-align: center;
+  }
+
+  #hidden-gems h2{
+    color: #a4bfd6;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #203547;
+    color: white;
+    padding: 10px;
+  }
+  

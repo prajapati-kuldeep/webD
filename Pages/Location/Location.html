@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>houseofkaroti</title>
+        <link rel="stylesheet" href="Location.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    </head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="../../index.html" ><img src="../../Logo/Black-White.png" class="logo"></a>
+            <ul>
+                <li><a href="../Home/Home.html">HOME</a></li>
+                <li><a href="../News/News.html">NEWS</a></li>
+                <li><a href="Location.html">LOCATION</a></li>
+                <li><a href="../About/About.html">ABOUT US</a></li>
+            </ul>
+        </div>
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="slide-card">
+                        <img class="slide-card-img-top" src="../../img/Rishikesh.jpg" alt="Profile">
+                        <div class="slide-card-body">
+                            <h5>
+                                Rishikesh<br />
+                                <span>Hindu Temple</span>
+                            </h5>
+                            <p>“Rishikesh Temple in Abu Road is a serene spiritual site known for its peaceful ambiance and scenic surroundings.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-card">
+                        <img class="slide-card-img-top" src="../../img/Bherutarak.jpg" alt="Profile">
+                        <div class="slide-card-body">
+                            <h5>
+                                Bherutarak Dham<br />
+                                <span>Jain Temple</span>
+                            </h5>
+                            <p>“Bherutarak Dham is a serene spiritual site, attracting devotees for its peaceful ambiance.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-card">
+                        <img class="slide-card-img-top" src="../../img/Mountabu.jpg" alt="Profile">
+                        <div class="slide-card-body">
+                            <h5>
+                                Mount Abu<br />
+                                <span>Hill Station</span>
+                            </h5>
+                            <p>“Mount Abu, Rajasthan's only hill station, is known for its cool climate and scenic beauty.”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    <section id="categories">
+        <h2>Categories</h2>
+        <div class="category-buttons">
+            <button onclick="filterCategory('historical')">Historical</button>
+            <button onclick="filterCategory('nature')">Nature</button>
+            <button onclick="filterCategory('religious')">Religious</button>
+            <button onclick="filterCategory('spiritual')">Spiritual</button>
+            <button onclick="filterCategory('commercial')">Commercial</button>
+        </div>
+    </section>
+
+    <section id="search">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter an area name...">
+            <button onclick="searchPlaces()">Search</button>
+        </div>
+        <div id="searchResults"></div>
+    </section>
+
+    <section id="places">
+        <div class="places-container">
+            <div class="place-card nature">
+                <img src="../../img/Mountabu.jpg" alt="Mount Abu">
+                <h3>Mount Abu</h3>
+                <p>Famous hill station with scenic beauty.</p>
+            </div>
+            <div class="place-card religious">
+                <img src="../../img/Delwara-temple.jpg" alt="Delwara Temple">
+                <h3>Delwara Temple</h3>
+                <p>1000-year-old intricately carved marble temples.</p>
+            </div>
+            <div class="place-card historical">
+                <img src="../../img/Sirohifort.jpg" alt="Sirohi Fort">
+                <h3>Sirohi Fort</h3>
+                <p>Historic fort offering panoramic views.</p>
+            </div>
+            <div class="place-card historical">
+                <img src="../../img/Achalgard-forl.jpg" alt="Achalgard Fort">
+                <h3>Achalgard Fort</h3>
+                <p>The ancient fort that is still standing tall.</p>
+            </div>
+            <div class="place-card religious">
+                <img src="../../img/Bherutarak.jpg" alt="Bherutarak Tirth">
+                <h3>Bherutarak Tirth</h3>
+                <p>The Bherutarak Tirth, That is a peaceful place in Nature.</p>
+            </div>
+            <div class="place-card historical">
+                <img src="../../img/Chandravati-ruins.jpg" alt="Chandravati Ruins">
+                <h3>Chandravati Ruins</h3>
+                <p>The Ruins that are said to be 15000 years old.</p>
+            </div>
+            <div class="place-card nature">
+                <img src="../../img/Jawaibandh.jpg" alt="Jawai Bandh">
+                <h3>Jawai Bandh</h3>
+                <p>The Jawai Dam is helpfull for the local water storage.</p>
+            </div>
+            <div class="place-card religious">
+                <img src="../../img/Jirawal.jpg" alt="Jirawala Tirth">
+                <h3>Jirawala Tirth</h3>
+                <p>Jirawala Parshwnath Tirth is a place that feels like a historical fort.</p>
+            </div>
+            <div class="place-card nature">
+                <img src="../../img/Kundeshwar.jpg" alt="Kundeshwar">
+                <h3>Kundeshwar</h3>
+                <p>The Kundeshwar Waterfall is a peaceful  place in the mountains of Abu.</p>
+            </div>
+            <div class="place-card religious">
+                <img src="../../img/Rishikesh.jpg" alt="Rishikesh">
+                <h3>Rishikesh Temple</h3>
+                <p>A ancient Temple in the town of Aburoad.</p>
+            </div>
+            <div class="place-card historical">
+                <img src="../../img/Sarneshwar.jpg" alt="Sarneshwar">
+                <h3>Sarneshwar Temple</h3>
+                <p>Historical temple that shows the glory of the princely state Sirohi.</p>
+            </div>
+            <div class="place-card spiritual">
+                <img src="../../img/Sarvdham-temple.jpg" alt="Sarvdham Temple">
+                <h3>Sarvdham Temple</h3>
+                <p>A monument that is the symbol of unity.</p>
+            </div>
+            <div class="place-card nature">
+                <img src="../../img/Selwadabandh.jpg" alt="Selwada Dam">
+                <h3>Selwada Dam</h3>
+                <p>A Water storage Dam that is helpful for local farmers.</p>
+            </div>
+            <div class="place-card religious">
+                <img src="../../img/Sundhamata.jpg" alt="Sundha Mata">
+                <h3>Sundha Mata Temple</h3>
+                <p>Rajasthan's first ropeway is installed here.</p>
+            </div>
+            <div class="place-card religious">
+                <img src="../../img/Swaraswati-temple.jpg" alt="Swaraswati Mata Temple">
+                <h3>Swaraswati Mata Temple</h3>
+                <p>A peaceful Temple of Ma Swaraswati in the village Azari.</p>
+            </div>
+            <div class="place-card nature">
+                <img src="../../img/Tokrabandh.jpg" alt="Tokara Dam">
+                <h3>Tokara Dam</h3>
+                <p>Tokara Dam is the water storage Dam for the local area.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hidden-gems">
+        <h2>Hidden Gems</h2>
+        <div class="places-container">
+            <div class="place-card">
+                <img src="../../img/RM01.jpg" alt="Nagani Temple">
+                <h3>Rameshwaram Temple</h3>
+                <p>A temple hidden in the mountains.</p>
+            </div>
+            <div class="place-card">
+                <img src="../../img/Bamanvad-ji.jpg" alt="Bamanvad Ji Tirth">
+                <h3>Bamanvad Ji Tirth</h3>
+                <p>A jain Temple for the Bamanvad ji.</p>
+            </div>
+            <div class="place-card">
+                <img src="../../img/madiya.jpg" alt="Madiya">
+                <h3>Madiya Mahadev Statue</h3>
+                <p>A Spiritual place in the village Madiya.</p>
+            </div>
+            <div class="place-card">
+                <img src="../../img/Dattani.jpg" alt="Kali Ma Temple">
+                <h3>Kali Ma Temple</h3>
+                <p>A very ancient Temple of the Ma Kali in Dattani village.</p>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Explore Sirohi. All rights reserved.</p>
+    </footer>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="Location.js"></script>
+</body>
+</html>
